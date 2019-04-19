@@ -1,0 +1,33 @@
+1.	cd Desktop
+2.	mkdir git-fun (create new directory)
+3. 	cd git-fun
+4.	git init (initialize directory as git)
+5.	touch README.md (create README file)
+6.	ls (list files in folder)
+7.	vim README.md (open with terminal text editor)
+	press "i" (Insert mode)
+	press escape couple of times, write ":x" to save&quit
+8.	git status (status of files, see untracked files)
+9.	git add README.md (add untracked file)
+10.	git status (now file is added)
+11.	git commit -m "first commit"
+12.	git status (now directory is clean, everything is committed.)
+13.	vim README.md (open with terminal text editor)
+	press "i" (Insert mode)
+	press escape couple of times, write ":x" to save&quit
+14.	git status (status of files, see modified file)
+15. git add -A (add all untracked and modified files)
+16.	git commit -m "second commit" (commit all added files)
+17. git log (shows all commits)
+18.	git checkout 035e986 (checkout commit, first 7 digits of commit number appears on log)
+	When you checkout, later commits will disappear
+19. git branch (see branches)
+20.	git checkout -b readme-one-line (create a new branch and checkout it to work)
+21. git checkout master (switch to master branch)
+22.	In order to push changes to github server, you need to generate a ssh key and add it to ssh agent
+23.	Create a repository in Github
+24.	git remote -v (shows all remote repositories attached)
+25. git remote add origin git@github.com:mrt47/test.git (adding remote ssh to directory)
+26.	git pull origin master (pull from github)
+	It fetchs and merges together
+27.	git push origin master (push to github)
